@@ -58,65 +58,65 @@ void mobil()
 	glColor3f(0.7, 0.8, 1.0); glVertex2f(-1.75, -1.0); 
 	glEnd();
     
-    //Ban Depan dan Belakang 
-    glColor3f(0.0, 0.0, 0.0); 
-    glBegin(GL_TRIANGLE_FAN);
-    glVertex2f(1.8, -0.9);
-    radius = 50;
-    jumlah_titik = 60;
-    x_tengah = 180;
-    y_tengah = -90;
-    for (i = 0; i <= 360; i++) {
-        float sudut = i * (2 * PI / jumlah_titik);
-        float x = x_tengah + radius * cos(sudut);
-        float y = y_tengah + radius * sin(sudut);
-        glVertex2f(x / 100, y / 100);
-    }
-    glEnd();
+    	//Ban Depan dan Belakang 
+    	glColor3f(0.0, 0.0, 0.0); 
+    	glBegin(GL_TRIANGLE_FAN);
+    	glVertex2f(1.8, -0.9);
+    	radius = 50;
+    	jumlah_titik = 60;
+    	x_tengah = 180;
+    	y_tengah = -90;
+    	for (i = 0; i <= 360; i++) {
+        	float sudut = i * (2 * PI / jumlah_titik);
+        	float x = x_tengah + radius * cos(sudut);
+        	float y = y_tengah + radius * sin(sudut);
+        	glVertex2f(x / 100, y / 100);
+    	}
+    	glEnd();
     
-    glBegin(GL_TRIANGLE_FAN);
-    glVertex2f(-0.8, -0.9);
-    radius = 50;
-    jumlah_titik = 60;
-    x_tengah = -80;
-    y_tengah = -90;
-    for (i = 0; i <= 360; i++) {
-        float sudut = i * (2 * PI / jumlah_titik);
-        float x = x_tengah + radius * cos(sudut);
-        float y = y_tengah + radius * sin(sudut);
-        glVertex2f(x / 100, y / 100);
-    }
-    glEnd();
+    	glBegin(GL_TRIANGLE_FAN);
+    	glVertex2f(-0.8, -0.9);
+    	radius = 50;
+    	jumlah_titik = 60;
+    	x_tengah = -80;
+    	y_tengah = -90;
+	for (i = 0; i <= 360; i++) {
+        	float sudut = i * (2 * PI / jumlah_titik);
+        	float x = x_tengah + radius * cos(sudut);
+        	float y = y_tengah + radius * sin(sudut);
+        	glVertex2f(x / 100, y / 100);
+    	}
+    	glEnd();
 
-    //Lingkaran putih di roda
-    glColor3f(1.0, 1.0, 1.0); 
-    glBegin(GL_TRIANGLE_FAN);
-    glVertex2f(1.8, -0.9); 
-    radius = 15; 
-    jumlah_titik = 60;
-    x_tengah = 180;
-    y_tengah = -90;
-    for (i = 0; i <= 360; i++) {
-        float sudut = i * (2 * PI / jumlah_titik);
-        float x = x_tengah + radius * cos(sudut);
-        float y = y_tengah + radius * sin(sudut);
-        glVertex2f(x / 100, y / 100);
-    }
-    glEnd();
+   	 //Lingkaran putih di roda
+    	glColor3f(1.0, 1.0, 1.0); 
+    	glBegin(GL_TRIANGLE_FAN);
+    	glVertex2f(1.8, -0.9); 
+    	radius = 15; 
+    	jumlah_titik = 60;
+    	x_tengah = 180;
+    	y_tengah = -90;
+    	for (i = 0; i <= 360; i++) {
+       		float sudut = i * (2 * PI / jumlah_titik);
+        	float x = x_tengah + radius * cos(sudut);
+        	float y = y_tengah + radius * sin(sudut);
+        	glVertex2f(x / 100, y / 100);
+    	}
+    	glEnd();
 
-    glBegin(GL_TRIANGLE_FAN);
-    glVertex2f(-0.9, -0.9); 
-    radius = 15; 
-    jumlah_titik = 60;
-    x_tengah = -80;
-    y_tengah = -90;
-    for (i = 0; i <= 360; i++) {
-        float sudut = i * (2 * PI / jumlah_titik);
-        float x = x_tengah + radius * cos(sudut);
-        float y = y_tengah + radius * sin(sudut);
-        glVertex2f(x / 100, y / 100);
-    }
-    glEnd();
+    	glBegin(GL_TRIANGLE_FAN);
+    	glVertex2f(-0.9, -0.9); 
+    	radius = 15; 
+    	jumlah_titik = 60;
+    	x_tengah = -80;
+    	y_tengah = -90;
+    	for (i = 0; i <= 360; i++) {
+        	float sudut = i * (2 * PI / jumlah_titik);
+        	float x = x_tengah + radius * cos(sudut);
+        	float y = y_tengah + radius * sin(sudut);
+        	glVertex2f(x / 100, y / 100);
+    	}
+   	 glEnd();
     
 	//Jalan
 	glColor3f(0.5, 0.5, 0.5);
