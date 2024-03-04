@@ -35,7 +35,7 @@ void Lingkaran(int radius, int jumlah_titik, int x_tengah, int y_tengah) {
     glEnd();
 }
 
-void Draw() {
+void gambarLingkaran() {
     glClear(GL_COLOR_BUFFER_BIT);
     background();
 
@@ -69,7 +69,7 @@ int main(int argc, char** argv) {
     glutInitWindowPosition(200, 200);
     glutCreateWindow("LINGKARAN");
     gluOrtho2D(-150, 150, -150, 150);
-    glutDisplayFunc(Draw);
+    glutDisplayFunc(gambarLingkaran);
     glutMainLoop();
     return 0;
 }
