@@ -1,3 +1,8 @@
+/*
+nama : Rahman Hanif Aji Saputra
+nim  : 24060122140128
+Tugas 1
+*/
 #include <math.h>
 #include <stdio.h>
 #include <GL/glut.h>
