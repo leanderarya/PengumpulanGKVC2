@@ -1,3 +1,8 @@
+/*
+nama : Rahman Hanif Aji Saputra
+nim  : 24060122140128
+Tugas 2
+*/
 #include <iostream>
 #include <stdlib.h>
 #ifdef _APPLE_
